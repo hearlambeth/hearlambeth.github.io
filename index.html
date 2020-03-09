@@ -6,7 +6,7 @@
 -->
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>lambeth 4:58</title>
+<title>lambeth</title>
 <style>
 body {
   margin: 0 auto;
@@ -20,19 +20,20 @@ body {
 main {
   margin-left: 0;
   font-family: "Lucida Console", Monaco, monospace;
-  font-size: 0.75em;
+  font-size: small;
+  color: white;
 }
 
 h2, h3, h2 button {
   all: inherit;
-  background-color: transparent;
-  border: none;
+  /** reset margin **/
   margin-left: 0ch;
-  color: white;
+  /** stating everything for IE, Edge - for which button inherit does not work **/
   font-family: "Lucida Console", Monaco, monospace;
-  font-size: 0.75em;
+  font-size: small;
   font-weight: normal;
-  padding: 1em;
+  border: none;
+  background-color: transparent;
 }
 
 h2, h2 button {
@@ -61,6 +62,7 @@ a {
 </style>
 </head>
 
+<body>
 <main>
 
 <h3 class="tab0">
@@ -151,6 +153,7 @@ a {
   </button>
 </h2>
 <div>
+<!-- future announcements, if you read this i guess it's a leak
   <h2 class="tab1">
   <button aria-expanded="false">
   from a custom of stacking the cedar on top of one another to form a cage (2020)/<span class="showmore">...</span>
@@ -175,11 +178,13 @@ a {
     <a href="https://hearlambeth.bandcamp.com/album/fronds-20191208" target="_blank">bandcamp</a> for full album information; purchase and stream there and the usual places; cassettes on kilohurtz records
     <br>lambeth played: guitar + function generator + pedals + sequencer
     <br>hallucinogenic bulb played: unity + ... etc.
+    <br>we played into each other and parallel with each other
     <br>collab album with hallucinogenic bulb, improvised and recorded in one day
     <br>38:04
     <br>1. floopy disc drive [4:39]<br>2. travel donut man [1:05]<br>3. previous copy machine experience [1:52]<br>4. pulse walk [6:14]<br>5. sure we've got home computer cartridges! [6:50]<br>6. ewald witt, wall walker [1:22]<br>7. emald mitt, mall malker [1:37]<br>8. topologically a dog is a sphere [6:46]<br>9. thetherball [0:47]<br>10. you're winner [6:47]
     </h3>
   </div>
+  -->
   <h2 class="tab1">
   <button aria-expanded="false">
   fronds 20190630 (2019)/<span class="showmore">...</span>
@@ -252,13 +257,73 @@ a {
 </div>
 
 <br>
+<!-- gear -->
+<h2 class="tab0">
+  <button aria-expanded="false">
+    instruments i use/<span class="showmore">...</span>
+  </button>
+</h2>
+<div hidden>
+	<h2 class="tab1">
+		<button aria-expanded="false">
+		computer software/<span class="showmore">...</span>
+  		</button>
+	</h2>
+	<div hidden>
+		<h3 class="tab2">
+		sequencer (python-coded based on <a href="http://www.ajaxsoundstudio.com/pyodoc/index.html" target="_blank">ajax studios' pyo library</a>, takes chunks of live signal or just-recorded signal and sequences them in loop to a pre-defined rhythm with sample-level control; chunks are glued together without regard for crossfades creating a clicking at boundaries i use as a rhythm)
+		<br>looper (retired, used on recordings to 2018; python-coded based on <a href="http://www.ajaxsoundstudio.com/pyodoc/index.html" target="_blank">ajax studios' pyo library</a>, up to eighty or so independent audio sources could be looped to unrelated or related lengths; i learned python and to make music making this but it was too hard to control and too messily coded)
+		<br>audacity
+		</h3>
+	</div>
+	<!-- 
+	<h2 class="tab1">
+		<button aria-expanded="false">
+		computer hardware/<span class="showmore">...</span>
+  		</button>
+	</h2>
+	<div hidden>
+		<h3 class="tab2">
+		dell laptop with linux
+		<br>focusrite audio interface
+		<br>behringer audio interface (broken, adds static i like)
+		</h3>
+	</div>
+	-->
+	<h2 class="tab1">
+		<button aria-expanded="false">
+		pedals/<span class="showmore">...</span>
+  		</button>
+	</h2>
+	<div hidden>
+		<h3 class="tab2">
+		active: alesis nanoverb; behringer bass eq; behringer dd-400; behringer four-channel mixer; boss dd-7; boss ps-6; brightonion dual reverse line selector; dod boneshaker; dod gonkulator; dwarfcraft great destroyer; ehx freeze; hartke bass attack; mooer pitchbox
+		<br>retired: digitech digidelay; ehx hog; line 6 m9; saturnworks a/b switcher; tc flashback x4; more i have forgotten
+		</h3>
+	</div>
+	<h2 class="tab1">
+		<button aria-expanded="false">
+		sound sources/<span class="showmore">...</span>
+  		</button>
+	</h2>
+	<div hidden>
+		<h3 class="tab2">
+		always: electric guitar; function generator 
+		<br>sometimes: contact microphones on things; no-input mixing board; acoustic piano; electric piano; radio; feedback; pocket synth; friends' skill and generosity on other instruments
+		</h3>
+	</div>
+</div>
+
+<br>
 <h3 class="tab0">
 --- end ---
 </h3>
 
 </main>
+</body>
 
 <script>
+/** button expander **/
 (function() {
   const headings = document.querySelectorAll('h2');
   
