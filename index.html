@@ -28,7 +28,8 @@ h2, h3, h2 button {
   all: inherit;
   /** reset margin **/
   margin-left: 0ch;
-  /** stating everything for IE, Edge - for which button inherit does not work **/
+  /** stating everything for IE, Edge - for which button inherit does not work 
+  there will be more things **/
   font-family: "Lucida Console", Monaco, monospace;
   font-size: small;
   font-weight: normal;
@@ -72,11 +73,11 @@ a {
 <br>
 <!-- bio -->
 <h2 class="tab0">
-  <button aria-expanded="true">
+  <button aria-expanded="false">
     lambeth/<span class="showmore">...</span>
   </button>
 </h2>
-<div>
+<div hidden>
   <h3 class="tab1">
   randomised repetition; sounds pixelated rearranged and looped realtime with python scripts; let machines do the real work; everything is better phased
   <br>based near philadelphia pa, 2017-present
@@ -108,17 +109,17 @@ a {
 <br>
 <!-- shows -->
 <h2 class="tab0">
-  <button aria-expanded="true">
+  <button aria-expanded="false">
     shows/<span class="showmore">...</span>
   </button>
 </h2>
-<div>
+<div hidden>
   <h2 class="tab1">
-  <button aria-expanded="true">
+  <button aria-expanded="false">
   future/<span class="showmore">...</span>
   </button> 
   </h2>
-  <div>
+  <div hidden>
     <h3 class="tab2">
     2020-05-19 century, philadelphia pa: w/ i.o, pory nog and the small circle of friends, nowhere, guitar and drums [two-album release show; collab set with hallucinogenic bulb and mini collab with i.o]<br>
     2020-04-16 1984, wilmington de: w/ grip [collab set with hallucinogenic bulb]<br>
@@ -148,11 +149,11 @@ a {
 <br>
 <!-- discography -->
 <h2 class="tab0">
-  <button aria-expanded="true">
+  <button aria-expanded="false">
     discography/<span class="showmore">...</span>
   </button>
 </h2>
-<div>
+<div hidden>
 <!-- future announcements, if you read this i guess it's a leak
   <h2 class="tab1">
   <button aria-expanded="false">
@@ -240,11 +241,11 @@ a {
 <br>
 <!-- elsewhere -->
 <h2 class="tab0">
-  <button aria-expanded="true">
-    elsewhere/<span class="showmore">...</span>
+  <button aria-expanded="false">
+    elsewhere & contact/<span class="showmore">...</span>
   </button>
 </h2>
-<div>
+<div hidden>
   <h3 class="tab1">
   email: hearlambeth at gmail.com
   <br>listen/purchase (most direct support): <a href="https://hearlambeth.bandcamp.com" target="_blank">bandcamp</a>
@@ -260,7 +261,7 @@ a {
 <!-- gear -->
 <h2 class="tab0">
   <button aria-expanded="false">
-    instruments i use/<span class="showmore">...</span>
+    gear/<span class="showmore">...</span>
   </button>
 </h2>
 <div hidden>
@@ -271,9 +272,9 @@ a {
 	</h2>
 	<div hidden>
 		<h3 class="tab2">
-		sequencer (python-coded based on <a href="http://www.ajaxsoundstudio.com/pyodoc/index.html" target="_blank">ajax studios' pyo library</a>, takes chunks of live signal or just-recorded signal and sequences them in loop to a pre-defined rhythm with sample-level control; chunks are glued together without regard for crossfades creating a clicking at boundaries i use as a rhythm)
+		sequencer (python-coded based on <a href="http://www.ajaxsoundstudio.com/pyodoc/index.html" target="_blank">ajax studios' pyo library</a>, takes chunks of live signal or just-recorded signal and sequences them in loop to a rhythm defined by sample lengths; chunks are glued together without regard for crossfades creating a clicking at boundaries i use as a rhythm)
 		<br>looper (retired, used on recordings to 2018; python-coded based on <a href="http://www.ajaxsoundstudio.com/pyodoc/index.html" target="_blank">ajax studios' pyo library</a>, up to eighty or so independent audio sources could be looped to unrelated or related lengths; i learned python and to make music making this but it was too hard to control and too messily coded)
-		<br>audacity
+		<br>audacity for mixing and mastering recordings
 		</h3>
 	</div>
 	<!-- 
@@ -308,8 +309,7 @@ a {
 	</h2>
 	<div hidden>
 		<h3 class="tab2">
-		always: electric guitar; function generator 
-		<br>sometimes: contact microphones on things; no-input mixing board; acoustic piano; electric piano; radio; feedback; pocket synth; friends' skill and generosity on other instruments
+		electric guitar; function generator;  acoustic piano; electric piano; contact microphones on things; no-input mixing board; radio; feedback loops; pocket synths; friends' skill and generosity on other instruments
 		</h3>
 	</div>
 </div>
